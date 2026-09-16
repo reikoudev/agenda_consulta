@@ -10,12 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>
-        
+
         Site
-    
+
     </title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
@@ -23,11 +23,12 @@
 
 <body id="top" class="d-flex flex-column min-vh-100 overflow-x-hidden">
 
-    <nav class="navbar navbar-expand-sm navbar-dark bg-success sticky-top">
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
 
         <div class="container-fluid">
 
-            <a class="navbar-brand" href="{% url 'home' %}">Logo</a>
+                <a class="navbar-brand fs-1" href="{% url 'home' %}"><img src="{% static 'image/logovitta+.png' %}"
+                    alt="Vitta+"> Vitta+ </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
 
@@ -61,43 +62,43 @@
 
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Menu</a>
 
-                            <ul class="dropdown-menu">
+                        <ul class="dropdown-menu">
 
-                                <li>
+                            <li>
 
-                                    <a class="dropdown-item" href="#">Contatos</a>
+                                <a class="dropdown-item" href="#">Contatos</a>
 
-                                </li>
+                            </li>
 
-                                <li>
+                            <li>
 
-                                    <a class="dropdown-item" href="#">Links</a>
+                                <a class="dropdown-item" href="#">Links</a>
 
-                                </li>
+                            </li>
 
-                                <hr>
+                            <hr>
 
-                                <li>
+                            <li>
 
-                                    <a class="dropdown-item" href="#">Sobre Nós</a>
+                                <a class="dropdown-item" href="#">Sobre Nós</a>
 
-                                </li>
+                            </li>
 
-                                <li>
+                            <li>
 
-                                    <a class="dropdown-item" href="#">Sobre o Autor</a>
+                                <a class="dropdown-item" href="#">Sobre o Autor</a>
 
-                                </li>
+                            </li>
 
-                                <hr>
+                            <hr>
 
-                                <li>
+                            <li>
 
-                                    <a class="dropdown-item" href="#">Políticas de Privacidade</a>
+                                <a class="dropdown-item" href="#">Políticas de Privacidade</a>
 
-                                </li>
+                            </li>
 
-                            </ul>
+                        </ul>
 
                     </li>
 
@@ -106,7 +107,7 @@
                 <form class="d-flex">
 
                     <input class="form-control me-2" type="text" placeholder="Search">
-                    
+
                     <button class="btn btn-primary" type="button">Pesquisar</button>
 
                 </form>
@@ -118,11 +119,11 @@
     </nav>
 
     <main class="flex-grow-1">
-        
+
         {% block content %}
-        
+
         {% endblock %}
-    
+
     </main>
 
     <div class="footer bg-success text-light">
@@ -131,7 +132,7 @@
 
             <a href="{% url 'home' %}"><i class="bi bi-house-door-fill fs-2"></i></a>
 
-            <div>&copy; 2026 DeLemosCoding. Todos os direitos reservados.</div>
+            <div>&copy; 2026 Vitta+. Todos os direitos reservados.</div>
 
             <a href="#top"><i class="bi bi-arrow-up-circle-fill fs-2"></i></a>
 
@@ -139,7 +140,7 @@
 
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
